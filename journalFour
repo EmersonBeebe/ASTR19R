@@ -1,0 +1,21 @@
+def main():
+    class Dog:
+        def __init__(self, aLength=12.5, lLength=14.5, eNum=2, tail=true, furry=true):
+            self.aLength=aLength
+            self.lLength=lLength
+            self.eNum=eNum
+            self.tail=tail
+            self.furry=furry
+        def toConsole(self):
+            theString="A dog with arms " + self.aLength + " inches long, legs " + self.lLength + " inches long, " + eNum + " eyes, "
+            if(self.tail and self.furry):
+                print(theString + "with fur and a tail.")
+            if(self.tail and not self.furry):
+                print(theString + "with a tail but no fur.")
+            if(self.furry and not self.tail):
+                print(theString + "with fur but no tail.")
+            if(not self.furry and not self.tail):
+                print(theString + "with neither fur nor a tail.")
+if __name__ == "__main__":
+    main()
+    
